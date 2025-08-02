@@ -3,6 +3,6 @@ $(document).ready(function() {
   $('.hometax').on('click', function(e) {
     e.preventDefault();
     const url = $(this).attr('href') || $(this).data('url') || 'www.hometax.go.kr';
-    window.open(url, '_blank', 'width=800,height=600');
+    window.location.href = url;
   });
 });
